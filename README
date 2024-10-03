@@ -1,0 +1,41 @@
+**Centos-7-Elastic-Kibana**
+
+Objetivo: Instalação do Elasticsearch e Kibana, utilizando o Vagrant. Para fins de laboratório.
+
+Requisitos:
+ - Vagrant ≥ 2.4.1
+ https://developer.hashicorp.com/vagrant/install?product_intent=vagrant
+ 
+ - VirtualBox ≥ 7.0.18
+ https://www.virtualbox.org/wiki/Downloads
+ 
+ - Plugin vagrant-vbguest ≥ 0.32.0
+https://github.com/dotless-de/vagrant-vbguest
+
+
+**Como fazer?**
+
+1. Após instalação do VirtualBox e do Vagrant, abra seu terminal e instale o plugin vagrant-vbguest com o seguinte comando:
+
+    `vagrant plugin install vagrant-vbguest`
+
+2. Faça um clone do projeto, abra seu terminal a partir do diretório do projeto e execute o seguinte comando:
+
+    `vagrant up`
+
+Esse comando irá provisionar uma máquina virtual Centos7, com 4GB de memória RAM, e ip fixo 192.168.1.2 (definidos no arquivo Vagrantfile)
+
+3. Será iniciado a instalação do Elasticsearch e Kibana. No final do processo vai ser gerado o *kibana-verification-code*, *Kibana Enrollment Token* e a *senha do usuário elastic*.
+
+
+**Observações**
+
+ - A máquina está configurada para subir com o ip 192.168.1.2, caso
+   queira alterar, no arquivo Vagrantfile, mudar na configuração
+   *config.vm.network*. Também nas linhas 26 e 42 do provision.
+
+- No provision, está comentado o comando para atualizar os pacotes.
+   Caso queira atualizar, descomente.
+
+
+Qualquer ponto de melhoria ou dúvidas, pode me enviar mensagem. Se preferir mande um email: diego.dias@azcorp.tech
