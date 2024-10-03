@@ -3,14 +3,16 @@
 Objetivo: Instalação do Elasticsearch e Kibana, utilizando o Vagrant. Para fins de laboratório.
 
 Requisitos:
- - Vagrant ≥ 2.4.1
+ - Vagrant ≥ 2.3.5
  https://developer.hashicorp.com/vagrant/install?product_intent=vagrant
  
- - VirtualBox ≥ 7.0.18
+ - VirtualBox ≥ 5.2.x, 6.0.x, 6.1.x and 7.0.x
  https://www.virtualbox.org/wiki/Downloads
  
  - Plugin vagrant-vbguest ≥ 0.32.0
 https://github.com/dotless-de/vagrant-vbguest
+
+Na dúvida consulte a documentação
 
 
 **Como fazer?**
